@@ -1,0 +1,143 @@
+/* //<=============== Basic styling configurations ================> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #F3F4F6;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+table tr td span {
+  font-family: "IBM Plex Sans Arabic", serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+table thead tr th {
+  color: #161616 !important;
+  font-size: 12px !important;
+  font-family: "IBM Plex Sans Arabic", serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  line-height: 18px !important;
+}
+
+table thead tr th span {
+  all: unset; 
+  display: inherit; 
+  color: inherit; 
+  font: inherit;
+  line-height: inherit;
+}
+
+table thead tr th{
+  min-width: auto !important;
+  max-width: auto !important;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.rmdp-container {
+  display: block !important; /* Removes the wrapper while keeping child elements */
+}
+
+/* //<=============== Tailwind css styling configurations ================> */
+
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+  height: 8px; /* Adjust height for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d2d6db; /* Change to your desired color */
+  border-radius: 4px;
+}
+.css-1pvbek2-react-select__indicator {
+  padding: 0px !important;
+}
+.react-select__clear-indicator {
+  padding: 0px !important;
+}
+.css-1ehm1ee-indicatorContainer {
+  padding: 0px !important;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Change to your desired track color */
+}
+
+@keyframes horizontal-wave {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.react-select__control {
+  min-height: 32px !important;
+  height: 32px !important;
+}
+
+.wave-loading {
+  border: 2px solid transparent !important;
+  background: linear-gradient(90deg, 
+    #f3f4f6 25%,  /* light gray */
+    #e5e7eb 50%,  /* medium gray */
+    #f3f4f6 75%   /* light gray */
+  );
+  background-size: 200% 100%;
+  animation: horizontal-wave 1.5s linear infinite;
+  border: 1px solid #d1d5db; /* gray-300 */
+}
+input{
+  height: 2rem !important;
+}
+/* styles.module.css */
+.customControlOverride {
+  height: 2rem !important;
+  min-height: 2rem !important;
+}
+/* Global CSS */
+.css-lfg7ws-control {
+  height: 2rem !important;
+  min-height: 2rem !important;
+}
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d2d6db transparent;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.css-1u9des2-indicatorSeparator{
+  visibility: hidden !important;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

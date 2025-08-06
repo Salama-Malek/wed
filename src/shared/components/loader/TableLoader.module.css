@@ -1,0 +1,9 @@
+.loader {
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid #9a9c9fda;
+    border-right-color: #1B8354;
+    animation: l2 .5s infinite linear;
+  }
+  @keyframes l2 {to{transform: rotate(1turn)}}
